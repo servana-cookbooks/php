@@ -29,3 +29,7 @@ end
 php_pear_channel 'pecl.php.net' do
   action :update
 end
+
+node['php']['extensions'].each do |ext|
+	include_recipe "php::module_#{ext}"
+end

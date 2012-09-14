@@ -1,6 +1,7 @@
 #
 # Author::  Joshua Timberman (<joshua@opscode.com>)
 # Author::  Seth Chisamore (<schisamo@opscode.com>)
+# Author::  Tass Skoudros (<tass@skystack.com)
 # Cookbook Name:: php
 # Recipe:: module_memcache
 #
@@ -28,7 +29,6 @@ when "rhel", "fedora"
   end
   php_pear "memcache" do
     action :install
-    #directives(:shm_size => "128M", :enable_cli => 0)
   end
 when "debian"
   package "php5-memcache" do
