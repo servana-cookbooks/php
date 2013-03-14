@@ -5,7 +5,7 @@ description       "Installs and maintains php and php modules"
 version           "1.1.0"
 
 depends "build-essential"
-depends "xml"
+#depends "xml"
 depends "mysql"
 
 %w{ debian ubuntu centos redhat fedora scientific amazon }.each do |os|
