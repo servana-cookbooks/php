@@ -27,6 +27,7 @@ default['php']['extensions'] = ["gd","curl"]
 default['php']['directives'] = {}
 
 default['php']['config'] = {}
+default['php']['config']['memory_limit'] = '-1'
 default['php']['config']['upload_max_filesize'] = '2M'
 default['php']['config']['post_max_size'] = '8M'
 
