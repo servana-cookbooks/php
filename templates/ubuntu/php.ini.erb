@@ -1,5 +1,5 @@
 [PHP]
-
+; This configuration is updated by Skystack Chef and contains mutiple overrides in the footer.
 ;;;;;;;;;;;;;;;;;;;
 ; About php.ini   ;
 ;;;;;;;;;;;;;;;;;;;
@@ -1852,6 +1852,6 @@ ldap.max_links = -1
 ; tab-width: 4
 ; End:
 
-<% node['php']['directives'].each do |directive, value| -%>
-<%= "#{directive}=\"#{value}\"" %>
+<% node['php']['config'].each do |directive, value| -%>
+<%= "#{directive} = #{value}" %>
 <% end -%>
