@@ -30,6 +30,7 @@ default['php']['config'] = {}
 default['php']['config']['memory_limit'] = '64M'
 default['php']['config']['upload_max_filesize'] = '2M'
 default['php']['config']['post_max_size'] = '8M'
+default['php']['config']['max_execution_time'] = '30'
 
 case node["platform_family"]
 when "rhel", "fedora"
